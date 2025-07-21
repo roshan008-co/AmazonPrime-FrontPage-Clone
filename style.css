@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.nav {
+    background-color: #0f1111;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav img {
+    width: 100px;
+    filter: invert(1);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.nav-bars li {
+    list-style: none;
+}
+
+.bar a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease, font-size 0.2s ease,
+        border 0.2s ease-in-out;
+}
+
+.bar a:hover {
+    /* color: rgb(105, 166, 219); */
+    background: #1e2834;
+    font-size: 15px;
+    border: 1px solid #ebeded;
+    border-radius: 2px;
+}
+
+.prime {
+    background-color: #0064f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    height: fit-content;
+}
+
+.prime img {
+    height: 60px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.join1 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 15px 0 0 0;
+}
+
+.join2 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0 0 15px 0;
+}
+
+.font {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.yellow {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffd500;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, font-size 0.2s ease;
+}
+
+.yellow:hover {
+    background-color: #fbe67b;
+    font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.tit {
+    color: #0064f9;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #0064f9;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    /* margin: 20px; */
+}
+
+.hero {
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: inherit;
+    gap: 60px;
+    transition: flex-direction 0.4s ease-in-out !important;
+}
+
+.box1,
+.box2,
+.box3 {
+    text-align: center;
+    width: fit-content;
+}
+
+.temp {
+    color: black;
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+    /* width: 35vw; */
+}
+
+.sec2 {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cards {
+    text-align: center;
+}
+
+.plan {
+    background-color: #232f3e;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards img {
+    width: 60px;
+    height: 60px;
+}
+
+/* .plan {
+        display: flex;
+      } */
+#heading-plan {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+}
+
+#title-plan {
+    text-align: center;
+}
+
+.prime-monthly {
+    height: fit-content;
+    width: fit-content !important;
+    margin: 20px auto;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    /* justify-content: center; */
+    width: 100%;
+    /* was 80% */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.view-plans {
+    background-color: #dde4e4;
+    color: black;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    color: #0f1111;
+    transition: all 0.4s cubic-bezier(0.05, 0.78, 0.58, 1);
+}
+
+.view-plans:hover {
+    border: 5px solid #0064f9;
+    background-color: #f7fafa;
+    scale: 1.2;
+
+    /* box-shadow: 10px 5px 5px rgb(189, 187, 187); */
+}
+
+.upper {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+}
+
+.mid {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+}
+
+.below {
+    font-size: small;
+    padding-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.trial-btn {
+    padding: 10px;
+    display: block;
+    display: flex;
+    margin: auto;
+    /* margin: 30px auto 0px auto; keep this if you want vertical spacing */
+}
+
+.discount {
+    background-color: #0064f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.dis-stu {
+    gap: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}
+
+.stu {
+    background-color: #dde4e4;
+    color: black;
+    font-size: 12px;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.2s cubic-bezier(0, 1.06, 1, 1);
+}
+
+.stu:hover {
+    background-color: #ffffff;
+    scale: 1.1;
+}
+
+.prm-benft {
+    margin-top: 50px;
+}
+
+.faq-mgn {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-que {
+    display: flex;
+    margin: auto;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
+    /* background: pink; */
+    border-top: 1px solid rgb(177, 174, 174);
+}
+
+.que {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: fit-content;
+    /* border-top: 2px solid black; */
+}
+
+.faq-que:last-child {
+    border-bottom: 1px solid rgb(177, 174, 174);
+}
+
+.space {
+    margin: 20px;
+}
+
+.footer {
+    background-color: #0f1111;
+}
+
+.ftr {
+    /* background-color: #dde4e4; */
+    margin: auto;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.foot {
+    margin: 30px auto;
+}
+
+.link-light {
+    color: white;
+    text-decoration: none;
+}
+
+.link-gray {
+    color: rgb(163, 162, 162);
+    text-decoration: none;
+}
+
+.credit {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.credit a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.credit a:hover {
+    color: #3083ff;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 806px) {
+
+    .join1,
+    .join2 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .font {
+        font-size: 14px;
+    }
+
+    .prime {
+        padding: 20px;
+        height: fit-content;
+    }
+
+    .prime img {
+        width: 80px;
+        height: auto;
+    }
+
+    .bar a {
+        font-size: 13px;
+        /* margin-bottom: 300px !important; */
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .sec2 {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px;
+    }
+
+    .plan {
+        height: 645px !important;
+        transition: all 0.1s ease;
+    }
+
+    .prime-monthly {
+        /* height: 150px !important; */
+        height: fit-content !important;
+        gap: 20px;
+        /* justify-content: center; */
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .dis-stu {
+        flex-direction: column;
+    }
+
+    .dis-stu {
+        flex-direction: column;
+        gap: 0px !important;
+    }
+
+    .ftr {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 438px) {
+    .view-plans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prime-monthly {
+        gap: 20px;
+        grid-template-columns: 1fr !important;
+    }
+
+    .plan {
+        height: 1230px !important;
+        transition: all 0.1s ease;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .join1,
+    .join2 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .font {
+        font-size: 7px;
+    }
+
+    .prime {
+        padding: 20px;
+        height: fit-content;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .sec2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .dis-stu {
+        flex-direction: column;
+        gap: 0px !important;
+    }
+
+    .ftr {
+        grid-template-columns: 1fr 1fr;
+    }
+}
